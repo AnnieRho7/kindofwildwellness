@@ -1,0 +1,11 @@
+/* assets/css/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    background: #f9f9f9;
+    color: #333;
+  }
+  a {
+    color: #0077cc;
+  }
+  
