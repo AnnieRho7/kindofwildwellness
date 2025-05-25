@@ -4,49 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About Us — Kind of Wild</title>
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
-  <body class="flex flex-col min-h-screen">
+  <body class="flex flex-col min-h-screen bg-[#f0e6da] text-[#333333]">
     <!-- HEADER -->
-    <header
-      class="bg-blue-700 text-white p-4 fixed top-0 left-0 right-0 shadow-md z-50"
-    >
-      <div class="container mx-auto flex justify-between items-center">
-        <a href="/index.html" class="font-bold text-xl">Kind of Wild</a>
+    <header class="bg-[#d9723c]">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <a href="home.html" class="font-bold text-xl text-white"
+          >Kind of Wild</a
+        >
         <nav>
-          <a href="/home/home.html" class="px-3 hover:underline">Home</a>
-          <a href="/blog/blog.html" class="px-3 hover:underline">Blog</a>
-          <a href="/about/about.html" class="px-3 hover:underline">About</a>
-          <a href="/contact/contact.html" class="px-3 hover:underline"
+          <a href="/home/home.html" class="px-3 hover:underline text-white"
+            >Home</a
+          >
+          <a href="/blog/blog.html" class="px-3 hover:underline text-white"
+            >Blog</a
+          >
+          <a href="/about/about.html" class="px-3 hover:underline text-white"
+            >About</a
+          >
+          <a href="/contact/contact.html" class="px-3 hover:underline text-white"
             >Contact</a
           >
-          <a href="/shop/shop.html" class="px-3 hover:underline">Shop</a>
+          <a href="/shop/shop.html" class="px-3 hover:underline text-white"
+            >Shop</a
+          >
         </nav>
       </div>
     </header>
 
     <!-- MAIN -->
     <main class="flex-grow pt-24 pb-24 container mx-auto px-4">
-      <h1 class="text-4xl font-bold mb-6">About Kind of Wild</h1>
-      <p class="text-lg text-gray-700 mb-4">
+      <h1 class="text-4xl font-bold mb-6 text-[#d9723c]">About Kind of Wild</h1>
+      <p class="text-lg mb-4 text-[#969e8c] leading-relaxed">
         We’re a wellness and lifestyle brand focused on empowering individuals
         to live intentionally, work meaningfully, and grow sustainably.
       </p>
-      <p class="text-gray-600 mb-4">
+      <p class="mb-4 text-[#333333]">
         Through our blog, curated shop, and community offerings, we help you
         align your professional life with your personal values.
       </p>
-      <p class="text-gray-600">
+      <p class="text-[#333333]">
         Our mission is to make mindful living accessible and powerful — whether
         you're a creative, entrepreneur, or wellness enthusiast.
       </p>
     </main>
 
     <!-- FOOTER -->
-    <footer
-      class="bg-blue-700 text-white p-4 fixed bottom-0 left-0 right-0 shadow-inner"
-    >
-      <div class="container mx-auto text-center">
+    <footer class="bg-[#969e8c] text-white p-4 text-center">
+      <div class="container mx-auto">
         &copy; 2025 Kind of Wild — All rights reserved
       </div>
     </footer>

@@ -3,47 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kind of Wild</title>
-    <!-- Tailwind CSS via CDN -->
+    <title>Contact — Kind of Wild</title>
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
-  <body class="flex flex-col min-h-screen">
+  <body class="flex flex-col min-h-screen bg-[#f0e6da] text-[#333333]">
     <!-- HEADER -->
-    <header
-      class="bg-blue-700 text-white p-4 fixed top-0 left-0 right-0 shadow-md z-50"
-    >
-      <div class="container mx-auto flex justify-between items-center">
-        <a href="index.html" class="font-bold text-xl">Kind of Wild</a>
+    <header class="bg-[#d9723c]">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <a href="home.html" class="font-bold text-xl text-white"
+          >Kind of Wild</a
+        >
         <nav>
-          <a href="/home/home.html" class="px-3 hover:underline">Home</a>
-          <a href="/blog/blog.html" class="px-3 hover:underline">Blog</a>
-          <a href="/about/about.html" class="px-3 hover:underline">About</a>
-          <a href="/contact/contact.html" class="px-3 hover:underline"
+          <a href="/home/home.html" class="px-3 hover:underline text-white"
+            >Home</a
+          >
+          <a href="/blog/blog.html" class="px-3 hover:underline text-white"
+            >Blog</a
+          >
+          <a href="/about/about.html" class="px-3 hover:underline text-white"
+            >About</a
+          >
+          <a
+            href="/contact/contact.html"
+            class="px-3 hover:underline text-white"
             >Contact</a
           >
-          <a href="/shop/shop.html" class="px-3 hover:underline">Shop</a>
+          <a href="/shop/shop.html" class="px-3 hover:underline text-white"
+            >Shop</a
+          >
         </nav>
       </div>
     </header>
 
     <!-- MAIN CONTENT -->
-    <main class="flex-grow pt-20 pb-20 container mx-auto px-4">
-      <h1 class="text-4xl font-bold mb-4">Welcome to My Business Blog</h1>
-      <p class="mb-6">
-        This is the homepage where you can find all the latest updates and
-        featured content.
-      </p>
-      <a href="blog/blog.html" class="text-blue-700 font-semibold underline"
-        >Visit the Blog</a
-      >
+    <main class="flex-grow pt-24 pb-24 container mx-auto px-4">
+      <h1 class="text-4xl font-bold mb-10 text-[#d9723c]">Our Products</h1>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Product Card -->
+        <div class="border rounded-lg shadow p-6 text-center bg-white">
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Wellness Journal"
+            class="mx-auto mb-4"
+          />
+          <h2 class="text-xl font-semibold mb-2 text-[#d9723c]">
+            Wellness Journal
+          </h2>
+          <p class="mb-2 text-[#333333]">$24.99</p>
+          <button class="button">Add to Cart</button>
+        </div>
+
+        <!-- Product Card -->
+        <div class="border rounded-lg shadow p-6 text-center bg-white">
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Mindful Mug"
+            class="mx-auto mb-4"
+          />
+          <h2 class="text-xl font-semibold mb-2 text-[#d9723c]">Mindful Mug</h2>
+          <p class="mb-2 text-[#333333]">$14.99</p>
+          <button class="button">Add to Cart</button>
+        </div>
+
+        <!-- Product Card -->
+        <div class="border rounded-lg shadow p-6 text-center bg-white">
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Aromatherapy Candle"
+            class="mx-auto mb-4"
+          />
+          <h2 class="text-xl font-semibold mb-2 text-[#d9723c]">
+            Aromatherapy Candle
+          </h2>
+          <p class="mb-2 text-[#333333]">$19.99</p>
+          <button class="button">Add to Cart</button>
+        </div>
+      </div>
     </main>
 
     <!-- FOOTER -->
-    <footer
-      class="bg-blue-700 text-white p-4 fixed bottom-0 left-0 right-0 shadow-inner"
-    >
-      <div class="container mx-auto text-center">
-        &copy; 2025 Business Blog — All rights reserved
+    <footer class="bg-[#969e8c] text-white p-4 text-center">
+      <div class="container mx-auto">
+        &copy; 2025 Kind of Wild — All rights reserved
       </div>
     </footer>
   </body>
