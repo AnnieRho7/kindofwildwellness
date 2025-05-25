@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kind of Wild</title>
-    <!-- Tailwind CDN -->
+    <title>Home — Kind of Wild</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="flex flex-col min-h-screen">
@@ -13,7 +12,7 @@
       class="bg-blue-700 text-white p-4 fixed top-0 left-0 right-0 shadow-md z-50"
     >
       <div class="container mx-auto flex justify-between items-center">
-        <a href="index.html" class="font-bold text-xl">Kind of Wild</a>
+        <a href="/index.html" class="font-bold text-xl">Kind of Wild</a>
         <nav>
           <a href="/home/home.html" class="px-3 hover:underline">Home</a>
           <a href="/blog/blog.html" class="px-3 hover:underline">Blog</a>
@@ -26,19 +25,54 @@
       </div>
     </header>
 
-    <!-- MAIN CONTENT -->
-    <main class="flex-grow pt-20 pb-20 container mx-auto px-4">
-      <h1 class="text-4xl font-bold mb-4">Welcome to the Business Blog</h1>
-      <p class="mb-6">This is the best place for insights and news.</p>
+    <!-- MAIN -->
+    <main class="flex-grow pt-24 pb-24 container mx-auto px-4">
+      <!-- Hero -->
+      <section class="text-center mb-16">
+        <h1 class="text-5xl font-bold mb-4">Welcome to Kind of Wild</h1>
+        <p class="text-lg mb-6">
+          Empowering wellness, mindfulness, and business growth.
+        </p>
+        <a
+          href="/shop/shop.html"
+          class="bg-blue-700 text-white py-2 px-6 rounded-full hover:bg-blue-800 transition"
+          >Explore Our Shop</a
+        >
+      </section>
+
+      <!-- About / Mission -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-semibold mb-4">Our Mission</h2>
+        <p class="text-gray-700">
+          At Kind of Wild, we believe in holistic living, intentional work, and
+          creating harmony between business and life. Through thoughtful content
+          and curated products, we help you thrive personally and
+          professionally.
+        </p>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="bg-blue-100 p-6 rounded-lg text-center">
+        <h3 class="text-2xl font-bold mb-2">Subscribe to Our Newsletter</h3>
+        <p class="mb-4">Stay updated with tips, insights, and new offerings.</p>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="p-2 rounded border w-1/2 max-w-md"
+        />
+        <button
+          class="ml-2 bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-800"
+        >
+          Subscribe
+        </button>
+      </section>
     </main>
 
     <!-- FOOTER -->
     <footer
       class="bg-blue-700 text-white p-4 fixed bottom-0 left-0 right-0 shadow-inner"
     >
-      <div class="container mx-auto text-center">
-        &copy; 2025 Business Blog — All rights reserved
-      </div>
+      <div class="container mx-auto text-center">&copy</div>
     </footer>
   </body>
 </html>
